@@ -1,342 +1,680 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Marcos Vinicius Schnorr | Advogado</title>
-<meta name="description" content="Advocacia personalizada com atendimento online em todo o Brasil. Direito Civil, Consumidor, Família, Trabalhista, Previdenciário e Contratual.">
-<meta property="og:title" content="Marcos Vinicius Schnorr | Advogado">
-<meta property="og:description" content="Direito com excelência, atendimento com humanidade. Atendimento online em todo o Brasil.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://mschnorr.adv.br">
-<meta property="og:image" content="https://generated-images.adapta.one/mschnorr.adv%40gmail.com/019e47d0-9dca-74ae-9e63-e5157ab0edeb/2026-05-20T23-56-36-733Z_Professional_and_creative_law_logo_featuring_the_n.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<style>
-  /* Reset & Base */
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body { font-family: 'Inter', sans-serif; color: #1a1a2e; line-height: 1.6; overflow-x: hidden; }
-  h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; font-weight: 700; }
-  a { text-decoration: none; color: inherit; }
-  .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-  .section-title { text-align: center; margin-bottom: 60px; }
-  .section-title h2 { font-size: 2.5rem; color: #0a1628; position: relative; display: inline-block; }
-  .section-title h2::after { content: ''; display: block; width: 60px; height: 3px; background: #c9a84c; margin: 15px auto 0; border-radius: 2px; }
-  .section-title p { color: #555; margin-top: 10px; font-size: 1.1rem; }
-  .btn { display: inline-block; padding: 14px 35px; border-radius: 50px; font-weight: 600; transition: all 0.3s ease; cursor: pointer; border: none; font-size: 1rem; }
-  .btn-primary { background: #c9a84c; color: #fff; box-shadow: 0 4px 15px rgba(201,168,76,0.3); }
-  .btn-primary:hover { background: #b8963e; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(201,168,76,0.4); }
-  .btn-outline { background: transparent; color: #c9a84c; border: 2px solid #c9a84c; }
-  .btn-outline:hover { background: #c9a84c; color: #fff; }
-  .btn-whatsapp { background: #25D366; color: #fff; }
-  .btn-whatsapp:hover { background: #1ebe5b; transform: translateY(-2px); }
-  .text-gold { color: #c9a84c; }
-  .bg-dark { background-color: #0a1628; color: #fff; }
-  .bg-light { background-color: #f8f9fa; }
-  /* Top Bar */
-  .top-bar { background: #060f1c; color: #aaa; padding: 8px 0; font-size: 0.85rem; }
-  .top-bar .container { display: flex; justify-content: flex-end; align-items: center; gap: 30px; }
-  .top-bar a { color: #ccc; transition: color 0.3s; }
-  .top-bar a:hover { color: #c9a84c; }
-  .top-bar i { margin-right: 6px; }
-  /* Header & Navigation */
-  header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; transition: all 0.3s ease; padding: 10px 0; background: transparent; }
-  header.scrolled { background: rgba(10,22,40,0.95); box-shadow: 0 2px 20px rgba(0,0,0,0.3); padding: 5px 0; }
-  header .container { display: flex; justify-content: space-between; align-items: center; }
-  .logo { display: flex; align-items: center; gap: 15px; }
-  .logo img { height: 50px; width: auto; border-radius: 5px; }
-  .logo-text { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: #fff; }
-  nav ul { list-style: none; display: flex; align-items: center; gap: 30px; }
-  nav a { color: #fff; font-weight: 500; transition: color 0.3s; position: relative; }
-  nav a:hover { color: #c9a84c; }
-  nav a::after { content: ''; position: absolute; left: 0; bottom: -4px; width: 0; height: 2px; background: #c9a84c; transition: width 0.3s; }
-  nav a:hover::after { width: 100%; }
-  .nav-cta { background: #25D366; padding: 10px 25px; border-radius: 50px; color: #fff !important; font-weight: 600; }
-  .nav-cta:hover { background: #1ebe5b; }
-  .nav-cta::after { display: none; }
-  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
-  .hamburger span { width: 30px; height: 3px; background: #fff; border-radius: 5px; transition: all 0.3s; }
-  .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
-  .hamburger.active span:nth-child(2) { opacity: 0; }
-  .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
-  /* Hero */
-  .hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: linear-gradient(135deg, #0a1628 0%, #1a2a4a 50%, #0a1628 100%);
-    position: relative;
-    overflow: hidden;
-    padding-top: 100px;
-  }
-  .hero::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
-    opacity: 0.15;
-    animation: parallax 20s ease infinite alternate;
-  }
-  @keyframes parallax {
-    0% { transform: scale(1); }
-    100% { transform: scale(1.1); }
-  }
-  .hero-content { position: relative; z-index: 1; max-width: 800px; padding: 0 20px; }
-  .hero h1 { font-size: 3.5rem; color: #fff; margin-bottom: 20px; }
-  .hero h1 span { color: #c9a84c; }
-  .hero p { font-size: 1.25rem; color: #ddd; margin-bottom: 40px; }
-  .hero-ctas { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
-  /* About */
-  .about { padding: 100px 0; }
-  .about-content { display: flex; align-items: center; gap: 60px; flex-wrap: wrap; }
-  .about-image { flex: 1; min-width: 280px; text-align: center; }
-  .about-image i { font-size: 12rem; color: #c9a84c; }
-  .about-text { flex: 2; min-width: 300px; }
-  .about-text p { font-size: 1.1rem; color: #444; margin-bottom: 30px; line-height: 1.8; }
-  .mission-vision-values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 50px; }
-  .card-mvv { background: #fff; padding: 30px; border-radius: 15px; box-shadow: 0 5px 25px rgba(0,0,0,0.08); text-align: center; transition: transform 0.3s; }
-  .card-mvv:hover { transform: translateY(-10px); }
-  .card-mvv i { font-size: 2.5rem; color: #c9a84c; margin-bottom: 20px; }
-  .card-mvv h3 { font-size: 1.5rem; margin-bottom: 15px; color: #0a1628; }
-  .card-mvv p { color: #666; }
-  /* Areas */
-  .areas { padding: 100px 0; background: #f8f9fa; }
-  .areas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
-  .area-card { background: #fff; padding: 30px; border-radius: 15px; box-shadow: 0 5px 25px rgba(0,0,0,0.06); text-align: center; transition: all 0.3s; border-bottom: 4px solid transparent; }
-  .area-card:hover { transform: translateY(-8px); border-bottom-color: #c9a84c; box-shadow: 0 8px 30px rgba(0,0,0,0.12); }
-  .area-card i { font-size: 3rem; color: #c9a84c; margin-bottom: 20px; }
-  .area-card h3 { font-size: 1.3rem; color: #0a1628; margin-bottom: 10px; }
-  .area-card p { color: #666; font-size: 0.95rem; }
-  /* Contact */
-  .contact { padding: 100px 0; background: linear-gradient(135deg, #0a1628, #1a2a4a); }
-  .contact .section-title h2 { color: #fff; }
-  .contact .section-title p { color: #ccc; }
-  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
-  .contact-form { display: flex; flex-direction: column; gap: 20px; }
-  .contact-form input, .contact-form textarea { padding: 15px; border: none; border-radius: 10px; background: rgba(255,255,255,0.1); color: #fff; font-size: 1rem; font-family: 'Inter', sans-serif; }
-  .contact-form input::placeholder, .contact-form textarea::placeholder { color: #aaa; }
-  .contact-form input:focus, .contact-form textarea:focus { outline: 2px solid #c9a84c; background: rgba(255,255,255,0.15); }
-  .contact-form textarea { resize: vertical; min-height: 120px; }
-  .contact-info { display: flex; flex-direction: column; gap: 30px; }
-  .info-item { display: flex; align-items: center; gap: 20px; color: #fff; }
-  .info-item i { font-size: 2rem; color: #c9a84c; width: 50px; text-align: center; }
-  .info-item a { color: #fff; transition: color 0.3s; }
-  .info-item a:hover { color: #c9a84c; }
-  .copy-btn { background: rgba(255,255,255,0.1); border: 1px solid #c9a84c; color: #c9a84c; padding: 8px 20px; border-radius: 50px; cursor: pointer; font-size: 0.9rem; transition: all 0.3s; margin-left: 10px; }
-  .copy-btn:hover { background: #c9a84c; color: #0a1628; }
-  /* Floating WhatsApp */
-  .floating-whatsapp {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 999;
-    background: #25D366;
-    color: #fff;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    box-shadow: 0 4px 15px rgba(37,211,102,0.4);
-    transition: all 0.3s;
-    animation: pulse 2s infinite;
-  }
-  .floating-whatsapp:hover { transform: scale(1.1); box-shadow: 0 6px 20px rgba(37,211,102,0.6); }
-  @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
-  /* Footer */
-  footer { background: #050e1a; color: #aaa; padding: 50px 0 20px; }
-  footer .container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
-  footer h4 { color: #fff; margin-bottom: 20px; font-family: 'Playfair Display', serif; }
-  footer ul { list-style: none; }
-  footer li { margin-bottom: 10px; }
-  footer a { color: #aaa; transition: color 0.3s; }
-  footer a:hover { color: #c9a84c; }
-  .footer-bottom { grid-column: 1 / -1; text-align: center; border-top: 1px solid #1a2a4a; padding-top: 20px; margin-top: 20px; font-size: 0.9rem; }
-  .footer-bottom .oab { color: #c9a84c; font-weight: 600; }
-  /* Toast */
-  .toast {
-    position: fixed;
-    bottom: 100px;
-    right: 30px;
-    background: #0a1628;
-    color: #fff;
-    padding: 15px 25px;
-    border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.4s;
-    z-index: 9999;
-  }
-  .toast.show { opacity: 1; transform: translateY(0); }
-  /* Scroll to top */
-  .scroll-top {
-    position: fixed;
-    bottom: 30px;
-    left: 30px;
-    z-index: 999;
-    background: #c9a84c;
-    color: #0a1628;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    cursor: pointer;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.4s;
-    box-shadow: 0 4px 15px rgba(201,168,76,0.3);
-  }
-  .scroll-top.visible { opacity: 1; visibility: visible; }
-  .scroll-top:hover { background: #b8963e; transform: translateY(-3px); }
-  /* Fade-in animation */
-  .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease, transform 0.8s ease; }
-  .fade-in.visible { opacity: 1; transform: translateY(0); }
-  /* Responsive */
-  @media (max-width: 992px) {
-    .mission-vision-values { grid-template-columns: 1fr; }
-    .contact-grid { grid-template-columns: 1fr; }
-    footer .container { grid-template-columns: 1fr 1fr; }
-  }
-  @media (max-width: 768px) {
-    .top-bar .container { justify-content: center; }
-    .top-bar span { display: none; }
-    nav ul { position: fixed; top: 0; right: -100%; width: 250px; height: 100vh; background: rgba(10,22,40,0.98); flex-direction: column; justify-content: center; align-items: center; gap: 25px; transition: right 0.4s; }
-    nav ul.open { right: 0; }
-    .hamburger { display: flex; }
-    .hero h1 { font-size: 2.2rem; }
-    .hero p { font-size: 1rem; }
-    .about-content { flex-direction: column; }
-    .about-image i { font-size: 8rem; }
-    .contact-grid { gap: 40px; }
-    footer .container { grid-template-columns: 1fr; text-align: center; }
-    .floating-whatsapp { bottom: 20px; right: 20px; width: 50px; height: 50px; font-size: 1.5rem; }
-    .scroll-top { bottom: 20px; left: 20px; width: 40px; height: 40px; font-size: 1.2rem; }
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcos Vinicius Schnorr | Advogado</title>
+  <meta name="description" content="Advocacia personalizada com atendimento online em todo o Brasil. Direito Civil, Consumidor, Família, Trabalhista, Previdenciário e Contratual.">
+  <meta property="og:title" content="Marcos Vinicius Schnorr | Advogado">
+  <meta property="og:description" content="Direito com excelência, atendimento com humanidade. Atendimento online em todo o Brasil.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mschnorr.adv.br">
+  <meta property="og:image" content="https://generated-images.adapta.one/mschnorr.adv%40gmail.com/019e47d0-9dca-74ae-9e63-e5157ab0edeb/2026-05-20T23-56-36-733Z_Professional_and_creative_law_logo_featuring_the_n.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #1a1a2e;
+      line-height: 1.6;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .section-title h2 {
+      font-size: 2.5rem;
+      color: #0a1628;
+    }
+    .section-title h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #c9a84c;
+      margin: 15px auto 0;
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 35px;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+    .btn-primary {
+      background: #c9a84c;
+      color: #0a1628;
+      box-shadow: 0 4px 15px rgba(201, 168, 76, 0.3);
+    }
+    .btn-primary:hover {
+      background: #b8973a;
+      transform: translateY(-2px);
+    }
+    .btn-outline {
+      background: transparent;
+      border: 2px solid #c9a84c;
+      color: #c9a84c;
+    }
+    .btn-outline:hover {
+      background: #c9a84c;
+      color: #0a1628;
+    }
+    .btn-whatsapp {
+      background: #25D366;
+      color: #fff;
+    }
+    .btn-whatsapp:hover {
+      background: #1da851;
+      transform: translateY(-2px);
+    }
+    .bg-dark {
+      background: #0a1628;
+      color: #fff;
+    }
+    .bg-light {
+      background: #f8f9fa;
+    }
+    /* Top Bar */
+    .top-bar {
+      background: #060f1c;
+      color: #aaa;
+      padding: 10px 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 30px;
+      font-size: 0.9rem;
+    }
+    .top-bar a {
+      color: #aaa;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .top-bar a:hover {
+      color: #c9a84c;
+    }
+    /* Header */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: transparent;
+      transition: all 0.4s ease;
+      padding: 15px 0;
+    }
+    .header.scrolled {
+      background: rgba(10, 22, 40, 0.95);
+      box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    }
+    .header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      color: #fff;
+      text-decoration: none;
+    }
+    .logo img {
+      width: 50px;
+      height: auto;
+    }
+    .logo span {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #fff;
+    }
+    .nav-menu ul {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+    }
+    .nav-menu ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.3s;
+    }
+    .nav-menu ul li a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #c9a84c;
+      transition: width 0.3s ease;
+    }
+    .nav-menu ul li a:hover {
+      color: #c9a84c;
+    }
+    .nav-menu ul li a:hover::after {
+      width: 100%;
+    }
+    .nav-cta {
+      background: #25D366 !important;
+      padding: 10px 20px;
+      border-radius: 50px;
+      color: #fff !important;
+    }
+    .nav-cta:hover {
+      background: #1da851 !important;
+    }
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 6px;
+      background: none;
+      border: none;
+      padding: 0;
+    }
+    .hamburger span {
+      width: 30px;
+      height: 3px;
+      background: #fff;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+    .hamburger.active span:nth-child(1) {
+      transform: rotate(45deg) translate(6px, 6px);
+    }
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -6px);
+    }
+    /* Hero */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, #0a1628, #1a2a4a);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+      opacity: 0.15;
+      animation: parallax 20s ease-in-out infinite alternate;
+    }
+    @keyframes parallax {
+      0% { transform: scale(1) translate(0, 0); }
+      100% { transform: scale(1.1) translate(30px, 20px); }
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      padding: 0 20px;
+    }
+    .hero-content h1 {
+      font-size: 3.5rem;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .hero-content h1 span {
+      color: #c9a84c;
+    }
+    .hero-content p {
+      font-size: 1.25rem;
+      color: #ddd;
+      margin-bottom: 30px;
+    }
+    .hero-ctas {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    /* About */
+    .about {
+      padding: 100px 0;
+    }
+    .about-content {
+      display: flex;
+      gap: 60px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .about-image i {
+      font-size: 12rem;
+      color: #c9a84c;
+    }
+    .about-text p {
+      font-size: 1.1rem;
+      color: #444;
+      margin-bottom: 20px;
+    }
+    .mission-vision-values {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 60px;
+    }
+    .card-mvv {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+    .card-mvv:hover {
+      transform: translateY(-10px);
+    }
+    .card-mvv i {
+      font-size: 2.5rem;
+      color: #c9a84c;
+      margin-bottom: 15px;
+    }
+    /* Areas */
+    .areas {
+      padding: 100px 0;
+      background: #f8f9fa;
+    }
+    .areas-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .area-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      border-bottom: 4px solid transparent;
+      transition: all 0.3s ease;
+    }
+    .area-card:hover {
+      transform: translateY(-8px);
+      border-bottom-color: #c9a84c;
+    }
+    .area-card i {
+      font-size: 3rem;
+      color: #c9a84c;
+      margin-bottom: 15px;
+    }
+    /* Contact */
+    .contact {
+      padding: 100px 0;
+      background: linear-gradient(135deg, #0a1628, #1a2a4a);
+    }
+    .contact .section-title h2 {
+      color: #fff;
+    }
+    .contact .section-title p {
+      color: #ccc;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .info-item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .info-item i {
+      font-size: 2rem;
+      color: #c9a84c;
+    }
+    .copy-btn {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid #c9a84c;
+      color: #c9a84c;
+      padding: 5px 15px;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: all 0.3s;
+    }
+    .copy-btn:hover {
+      background: #c9a84c;
+      color: #0a1628;
+    }
+    /* Floating WhatsApp */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 999;
+      background: #25D366;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+      animation: pulse 2s infinite;
+      text-decoration: none;
+      transition: transform 0.3s;
+    }
+    .floating-whatsapp:hover {
+      transform: scale(1.1);
+    }
+    .floating-whatsapp i {
+      color: #fff;
+      font-size: 1.8rem;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+      70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+    /* Footer */
+    .footer {
+      background: #050e1a;
+      color: #aaa;
+      padding: 60px 0 20px;
+    }
+    .footer .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+    .footer h4 {
+      color: #fff;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 20px;
+    }
+    .footer ul {
+      list-style: none;
+    }
+    .footer ul li {
+      margin-bottom: 10px;
+    }
+    .footer ul li a {
+      color: #aaa;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .footer ul li a:hover {
+      color: #c9a84c;
+    }
+    .footer-bottom {
+      grid-column: 1 / -1;
+      text-align: center;
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    .footer-bottom .oab {
+      color: #c9a84c;
+      font-weight: 600;
+    }
+    /* Toast */
+    .toast {
+      position: fixed;
+      bottom: 100px;
+      right: 30px;
+      background: #0a1628;
+      color: #fff;
+      padding: 15px 25px;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.3s ease;
+      z-index: 999;
+    }
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /* Scroll Top */
+    .scroll-top {
+      position: fixed;
+      bottom: 30px;
+      left: 30px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #c9a84c;
+      color: #0a1628;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      border: none;
+      z-index: 998;
+    }
+    .scroll-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+    .scroll-top i {
+      font-size: 1.5rem;
+    }
+    /* Fade-in */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /* Responsive */
+    @media (max-width: 992px) {
+      .mission-vision-values {
+        grid-template-columns: 1fr;
+      }
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer .container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 768px) {
+      .top-bar {
+        justify-content: center;
+      }
+      .nav-menu ul {
+        position: fixed;
+        right: -100%;
+        top: 0;
+        width: 250px;
+        height: 100vh;
+        background: #0a1628;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: right 0.4s ease;
+        gap: 20px;
+      }
+      .nav-menu.open ul {
+        right: 0;
+      }
+      .hamburger {
+        display: flex;
+      }
+      .hero-content h1 {
+        font-size: 2.2rem;
+      }
+      .about-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      .floating-whatsapp {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+      }
+      .scroll-top {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        left: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- Top Bar -->
   <div class="top-bar">
     <div class="container">
-      <a href="mailto:mschnorr.adv@gmail.com"><i class="fas fa-envelope"></i> mschnorr.adv@gmail.com</a>
-      <a href="https://wa.me/5551981878745" target="_blank"><i class="fab fa-whatsapp"></i> (51) 98187-8745</a>
+      <i class="fas fa-envelope"></i> <a href="mailto:mschnorr.adv@gmail.com">mschnorr.adv@gmail.com</a>
+      <i class="fas fa-phone-alt"></i> <a href="https://wa.me/5551981878745">(51) 98187-8745</a>
     </div>
   </div>
 
   <!-- Header -->
-  <header id="header">
+  <header class="header" id="header">
     <div class="container">
-      <div class="logo">
-        <img src="https://generated-images.adapta.one/mschnorr.adv%40gmail.com/019e47d0-9dca-74ae-9e63-e5157ab0edeb/2026-05-20T23-56-36-733Z_Professional_and_creative_law_logo_featuring_the_n.png" alt="Logotipo Marcos Vinicius Schnorr Advogado">
-        <span class="logo-text">Marcos Vinicius Schnorr</span>
-      </div>
-      <nav>
-        <ul id="nav-menu">
+      <a href="#" class="logo">
+        <img src="https://generated-images.adapta.one/mschnorr.adv%40gmail.com/019e47d0-9dca-74ae-9e63-e5157ab0edeb/2026-05-20T23-56-36-733Z_Professional_and_creative_law_logo_featuring_the_n.png" alt="Logo Marcos Vinicius Schnorr">
+        <span>Marcos Vinicius Schnorr</span>
+      </a>
+      <nav class="nav-menu" id="navMenu">
+        <ul>
           <li><a href="#hero">Início</a></li>
           <li><a href="#about">Sobre</a></li>
           <li><a href="#areas">Áreas</a></li>
           <li><a href="#contact">Contato</a></li>
-          <li><a href="https://wa.me/5551981878745" target="_blank" class="nav-cta"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+          <li><a href="https://wa.me/5551981878745" class="nav-cta">WhatsApp</a></li>
         </ul>
-        <div class="hamburger" id="hamburger" aria-label="Abrir menu" role="button" tabindex="0">
-          <span></span><span></span><span></span>
-        </div>
       </nav>
+      <div class="hamburger" id="hamburger" role="button" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </header>
 
   <!-- Hero -->
-  <section id="hero" class="hero">
-    <div class="hero-content fade-in">
-      <h1>Direito com <span>excelência</span>,<br>atendimento com <span>humanidade</span></h1>
-      <p>Advocacia personalizada com atendimento online em todo o Brasil</p>
-      <div class="hero-ctas">
-        <a href="https://wa.me/5551981878745" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Fale pelo WhatsApp</a>
-        <a href="#contact" class="btn btn-outline">Entre em Contato</a>
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content fade-in">
+        <h1>Direito com <span>excelência</span>, atendimento com <span>humanidade</span></h1>
+        <p>Advocacia personalizada com atendimento online em todo o Brasil</p>
+        <div class="hero-ctas">
+          <a href="https://wa.me/5551981878745" class="btn btn-whatsapp">Fale pelo WhatsApp</a>
+          <a href="#contact" class="btn btn-outline">Entre em Contato</a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- About -->
-  <section id="about" class="about">
+  <section class="about" id="about">
     <div class="container">
       <div class="section-title fade-in">
         <h2>Sobre</h2>
         <p>Conheça o profissional</p>
       </div>
-      <div class="about-content">
-        <div class="about-image fade-in">
+      <div class="about-content fade-in">
+        <div class="about-image">
           <i class="fas fa-balance-scale"></i>
         </div>
-        <div class="about-text fade-in">
-          <p>Dr. Marcos Vinicius Schnorr é advogado dedicado à defesa dos interesses de seus clientes com ética, estratégia e compromisso. Atua com atendimento personalizado, oferecendo soluções jurídicas eficientes e acesso à justiça de forma humanizada. Com atendimento 100% online, atende clientes em todo o território nacional, levando segurança jurídica onde você estiver.</p>
-          <div class="mission-vision-values">
-            <div class="card-mvv fade-in">
-              <i class="fas fa-bullseye"></i>
-              <h3>Missão</h3>
-              <p>Oferecer assessoria jurídica de excelência com ética e dedicação.</p>
-            </div>
-            <div class="card-mvv fade-in">
-              <i class="fas fa-eye"></i>
-              <h3>Visão</h3>
-              <p>Ser referência em advocacia humanizada e acessível digitalmente.</p>
-            </div>
-            <div class="card-mvv fade-in">
-              <i class="fas fa-hand-holding-heart"></i>
-              <h3>Valores</h3>
-              <p>Ética, transparência, respeito e compromisso com o cliente.</p>
-            </div>
-          </div>
+        <div class="about-text">
+          <p>Dr. Marcos Vinicius Schnorr é advogado comprometido com a excelência e a humanização no atendimento. Com vasta experiência nas principais áreas do direito, oferece soluções jurídicas personalizadas, sempre com ética, transparência e dedicação. Atende presencialmente no Rio Grande do Sul e online em todo o Brasil.</p>
+        </div>
+      </div>
+      <div class="mission-vision-values fade-in">
+        <div class="card-mvv">
+          <i class="fas fa-bullseye"></i>
+          <h3>Missão</h3>
+          <p>Oferecer assessoria jurídica de excelência com ética e dedicação.</p>
+        </div>
+        <div class="card-mvv">
+          <i class="fas fa-eye"></i>
+          <h3>Visão</h3>
+          <p>Ser referência em advocacia humanizada e acessível digitalmente.</p>
+        </div>
+        <div class="card-mvv">
+          <i class="fas fa-hand-holding-heart"></i>
+          <h3>Valores</h3>
+          <p>Ética, transparência, respeito e compromisso com o cliente.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Practice Areas -->
-  <section id="areas" class="areas">
+  <!-- Areas de Atuação -->
+  <section class="areas" id="areas">
     <div class="container">
       <div class="section-title fade-in">
         <h2>Áreas de Atuação</h2>
         <p>Soluções jurídicas completas</p>
       </div>
-      <div class="areas-grid">
-        <div class="area-card fade-in">
+      <div class="areas-grid fade-in">
+        <div class="area-card">
           <i class="fas fa-gavel"></i>
           <h3>Direito Civil</h3>
           <p>Responsabilidade civil, contratos, indenizações e obrigações.</p>
         </div>
-        <div class="area-card fade-in">
+        <div class="area-card">
           <i class="fas fa-shopping-cart"></i>
           <h3>Direito do Consumidor</h3>
           <p>Defesa do consumidor, revisão de contratos e danos morais.</p>
         </div>
-        <div class="area-card fade-in">
+        <div class="area-card">
           <i class="fas fa-users"></i>
           <h3>Direito de Família</h3>
           <p>Divórcio, guarda, pensão alimentícia e inventário.</p>
         </div>
-        <div class="area-card fade-in">
+        <div class="area-card">
           <i class="fas fa-briefcase"></i>
           <h3>Direito Trabalhista</h3>
           <p>Reclamações trabalhistas, rescisão e direitos do trabalhador.</p>
         </div>
-        <div class="area-card fade-in">
+        <div class="area-card">
           <i class="fas fa-calendar-check"></i>
           <h3>Direito Previdenciário</h3>
           <p>Aposentadoria, pensão por morte e benefícios do INSS.</p>
         </div>
-        <div class="area-card fade-in">
+        <div class="area-card">
           <i class="fas fa-file-signature"></i>
           <h3>Direito Contratual</h3>
           <p>Elaboração, revisão e análise de contratos.</p>
@@ -345,48 +683,40 @@
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="contact">
+  <!-- Contato (sem formulário) -->
+  <section class="contact" id="contact">
     <div class="container">
       <div class="section-title fade-in">
         <h2>Contato</h2>
         <p>Entre em contato para agendar uma consulta</p>
       </div>
-        <div class="contact-info fade-in">
+      <div class="contact-grid fade-in">
+        <div class="contact-info">
           <div class="info-item">
             <i class="fas fa-envelope"></i>
-            <div>
-              <strong>E-mail</strong><br>
-              <a href="mailto:mschnorr.adv@gmail.com">mschnorr.adv@gmail.com</a>
-            </div>
+            <span>mschnorr.adv@gmail.com</span>
           </div>
           <div class="info-item">
             <i class="fab fa-whatsapp"></i>
-            <div>
-              <strong>WhatsApp</strong><br>
-              <a href="https://wa.me/5551981878745" target="_blank">(51) 98187-8745</a>
-              <button class="copy-btn" onclick="copyWhatsApp()" aria-label="Copiar número do WhatsApp"><i class="fas fa-copy"></i> Copiar</button>
-            </div>
+            <span>(51) 98187-8745</span>
+            <button class="copy-btn" onclick="copyWhatsApp()">Copiar</button>
           </div>
           <div class="info-item">
             <i class="fas fa-globe"></i>
-            <div>
-              <strong>Atendimento</strong><br>
-              Online em todo o Brasil
-            </div>
+            <span>Atendimento Online em todo o Brasil</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/5551981878745" target="_blank" class="floating-whatsapp" aria-label="Fale pelo WhatsApp">
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/5551981878745" class="floating-whatsapp" target="_blank">
     <i class="fab fa-whatsapp"></i>
   </a>
 
-  <!-- Scroll to top -->
-  <div class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Voltar ao topo">
+  <!-- Scroll Top -->
+  <div class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
     <i class="fas fa-chevron-up"></i>
   </div>
 
@@ -394,109 +724,98 @@
   <div class="toast" id="toast">Número copiado!</div>
 
   <!-- Footer -->
-  <footer>
+  <footer class="footer">
     <div class="container">
       <div>
         <h4>Marcos Vinicius Schnorr</h4>
-        <p style="color:#aaa;">Advocacia com excelência e humanidade. Atendimento online em todo o Brasil.</p>
+        <p>Advocacia com excelência e humanidade.</p>
       </div>
       <div>
         <h4>Links Rápidos</h4>
         <ul>
           <li><a href="#hero">Início</a></li>
           <li><a href="#about">Sobre</a></li>
-          <li><a href="#areas">Áreas de Atuação</a></li>
+          <li><a href="#areas">Áreas</a></li>
           <li><a href="#contact">Contato</a></li>
         </ul>
       </div>
       <div>
         <h4>Contato</h4>
         <ul>
-          <li><i class="fas fa-envelope"></i> <a href="mailto:mschnorr.adv@gmail.com">mschnorr.adv@gmail.com</a></li>
-          <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5551981878745" target="_blank">(51) 98187-8745</a></li>
+          <li><i class="fas fa-envelope"></i> mschnorr.adv@gmail.com</li>
+          <li><i class="fas fa-phone-alt"></i> (51) 98187-8745</li>
         </ul>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 Marcos Vinicius Schnorr - Todos os direitos reservados</p>
-        <p class="oab">OAB/RS 113.933</p>
+        <p>&copy; 2026 Marcos Vinicius Schnorr | <span class="oab">OAB/RS 113.933</span></p>
       </div>
     </div>
   </footer>
 
   <script>
-    // Menu mobile toggle
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('nav-menu');
-    hamburger.addEventListener('click', () => {
-      navMenu.classList.toggle('open');
-      hamburger.classList.toggle('active');
-    });
-    // Fechar menu ao clicar em link
-    document.querySelectorAll('#nav-menu a').forEach(link => {
-      link.addEventListener('click', () => {
-        navMenu.classList.remove('open');
-        hamburger.classList.remove('active');
+    // Hamburger toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      const hamburger = document.getElementById('hamburger');
+      const navMenu = document.getElementById('navMenu');
+      hamburger.addEventListener('click', function() {
+        navMenu.classList.toggle('open');
+        hamburger.classList.toggle('active');
+      });
+      // Close menu when link is clicked
+      const navLinks = document.querySelectorAll('.nav-menu ul li a');
+      navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          navMenu.classList.remove('open');
+          hamburger.classList.remove('active');
+        });
       });
     });
-    // Header scroll effect
-    const header = document.getElementById('header');
-    window.addEventListener('scroll', () => {
+
+    // Header scroll
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('header');
       if (window.scrollY > 80) {
         header.classList.add('scrolled');
       } else {
         header.classList.remove('scrolled');
       }
     });
-    // Scroll to top button visibility
-    const scrollTopBtn = document.getElementById('scrollTop');
-    window.addEventListener('scroll', () => {
+
+    // Scroll top visibility
+    window.addEventListener('scroll', function() {
+      const scrollTop = document.getElementById('scrollTop');
       if (window.scrollY > 500) {
-        scrollTopBtn.classList.add('visible');
+        scrollTop.classList.add('visible');
       } else {
-        scrollTopBtn.classList.remove('visible');
+        scrollTop.classList.remove('visible');
       }
     });
-    // Fade-in on scroll (Intersection Observer)
-    const faders = document.querySelectorAll('.fade-in');
-    const appearOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
-    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+
+    // Intersection Observer for fade-in
+    const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
       });
-    }, appearOptions);
-    faders.forEach(fader => appearOnScroll.observe(fader));
-    // Contact form validation
-    const form = document.getElementById('contactForm');
-    const formMessage = document.getElementById('formMessage');
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      const nome = form.querySelector('input[name="nome"]').value.trim();
-      const email = form.querySelector('input[name="email"]').value.trim();
-      const assunto = form.querySelector('input[name="assunto"]').value.trim();
-      const mensagem = form.querySelector('textarea[name="mensagem"]').value.trim();
-      if (!nome || !email || !assunto || !mensagem) {
-        formMessage.textContent = 'Por favor, preencha todos os campos.';
-        formMessage.style.color = '#e74c3c';
-        return;
-      }
-      // Simulate success
-      formMessage.textContent = 'Mensagem enviada com sucesso! Entraremos em contato em breve.';
-      formMessage.style.color = '#c9a84c';
-      form.reset();
+    }, {
+      threshold: 0.15,
+      rootMargin: '0px 0px -50px 0px'
     });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
     // Copy WhatsApp number
     function copyWhatsApp() {
       navigator.clipboard.writeText('(51) 98187-8745').then(() => {
         const toast = document.getElementById('toast');
         toast.classList.add('show');
-        setTimeout(() => { toast.classList.remove('show'); }, 3000);
+        setTimeout(() => {
+          toast.classList.remove('show');
+        }, 3000);
       }).catch(err => {
-        console.error('Erro ao copiar: ', err);
+        console.error('Erro ao copiar:', err);
       });
     }
-    // Expose copy function globally
     window.copyWhatsApp = copyWhatsApp;
   </script>
 </body>
