@@ -1,154 +1,226 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcos Vinicius Schnorr | Advogado</title>
-    <style>
-        /* Estilos Gerais */
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Helvetica Neue', Arial, sans-serif; }
-        body { color: #333; line-height: 1.6; background-color: #f9f9f9; }
-        .container { width: 90%; max-width: 1100px; margin: 0 auto; }
-        
-        /* Cores do Escritório (Baseadas no novo logotipo) */
-        :root { --primary: #0a1324; --secondary: #b58d53; --light: #e5e5e5; }
-
-        /* Cabeçalho e Navegação Otimizados */
-        header { background-color: var(--primary); padding: 15px 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.2); }
-        nav { display: flex; justify-content: space-between; align-items: center; }
-        
-        /* Ajuste para o Logotipo no Menu - Agora com Destaque */
-        .logo-container { display: flex; align-items: center; gap: 15px; text-decoration: none; }
-        .logo-img { height: 75px; width: auto; object-fit: contain; }
-        .logo-text { color: #fff; }
-        .logo-text h2 { font-size: 20px; font-weight: bold; letter-spacing: 0.5px; }
-        .logo-text span { color: var(--secondary); font-size: 14px; font-weight: bold; }
-        
-        nav ul { display: flex; list-style: none; }
-        nav ul li { margin-left: 20px; }
-        nav ul li a { color: #fff; text-decoration: none; font-size: 16px; transition: color 0.3s; }
-        nav ul li a:hover { color: var(--secondary); }
-
-        /* Seção Principal (Hero) */
-        .hero { background: linear-gradient(rgba(10, 19, 36, 0.9), rgba(10, 19, 36, 0.9)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1920') no-repeat center center/cover; padding: 150px 0; color: #fff; text-align: center; }
-        .hero h1 { font-size: 42px; margin-bottom: 20px; font-weight: 700; color: #fff; }
-        .hero p { font-size: 20px; margin-bottom: 30px; color: var(--light); }
-        .btn { display: inline-block; background-color: var(--secondary); color: #fff; padding: 12px 30px; text-decoration: none; font-weight: bold; border-radius: 4px; transition: transform 0.3s, background-color 0.3s; }
-        .btn:hover { transform: translateY(-2px); background-color: #967340; }
-
-        /* Seções Gerais */
-        section { padding: 80px 0; }
-        section h2 { text-align: center; font-size: 32px; margin-bottom: 40px; color: var(--primary); position: relative; }
-        section h2::after { content: ''; display: block; width: 50px; height: 3px; background-color: var(--secondary); margin: 10px auto 0; }
-
-        /* Áreas de Atuação */
-        .areas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
-        .area-card { background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-top: 4px solid var(--primary); transition: transform 0.3s; }
-        .area-card:hover { transform: translateY(-5px); border-top-color: var(--secondary); }
-        .area-card h3 { margin-bottom: 15px; color: var(--primary); }
-
-        /* Sobre */
-        .sobre-content { display: flex; align-items: center; gap: 50px; flex-wrap: wrap; }
-        .sobre-text { flex: 1; min-width: 300px; }
-        .sobre-text p { margin-bottom: 15px; text-align: justify; }
-
-        /* Contato */
-        .contato-wrapper { display: flex; justify-content: space-between; gap: 50px; flex-wrap: wrap; }
-        .contato-info { flex: 1; min-width: 300px; }
-        .contato-info p { margin-bottom: 20px; font-size: 18px; }
-        .contato-info strong { color: var(--primary); }
-
-        /* Rodapé */
-        footer { background-color: var(--primary); color: #fff; text-align: center; padding: 30px 0; font-size: 14px; border-top: 3px solid var(--secondary); }
-
-        /* Responsividade Básica */
-        @media (max-width: 768px) {
-            nav { flex-direction: column; gap: 15px; }
-            nav ul li { margin: 0 10px; }
-            .hero h1 { font-size: 32px; }
-            section { padding: 50px 0; }
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <div class="container">
-            <nav>
-                <a href="#" class="logo-container">
-                    <img src="https://images2.imgbox.com/39/b9/eZJ49G1Z_o.png" alt="MVS Advogado" class="logo-img">
-                    <div class="logo-text">
-                        <h2>Marcos Vinicius Schnorr</h2>
-                        <span>Advogado</span>
-                    </div>
-                </a>
-                <ul>
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#atuacao">Áreas de Atuação</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section id="inicio" class="hero">
-        <div class="container">
-            <h1>Defendendo Seus Direitos com Excelência e Ética</h1>
-            <p>Advocacia especializada pronta para oferecer as melhores soluções jurídicas para o seu caso.</p>
-            <a href="https://wa.me/5551981878745?text=Olá%20Dr.%20Marcos,%20gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="btn">Agende uma Consulta no WhatsApp</a>
-        </div>
-    </section>
-
-    <section id="atuacao" class="container">
-        <h2>Áreas de Atuação</h2>
-        <div class="areas-grid">
-            <div class="area-card">
-                <h3>Direito Civil</h3>
-                <p>Resolução de conflitos contratuais, posse, propriedade, responsabilidade civil e obrigações.</p>
-            </div>
-            <div class="area-card">
-                <h3>Direito de Família</h3>
-                <p>Divórcios, inventários, partilha de bens, pensão alimentícia e guarda de menores com sensibilidade e sigilo.</p>
-            </div>
-            <div class="area-card">
-                <h3>Direito do Trabalho</h3>
-                <p>Defesa dos direitos do trabalhador e assessoria preventiva para empresas de diversos portes.</p>
-            </div>
-            <div class="area-card">
-                <h3>Direito Previdenciário</h3>
-                <p>Auxílio na concessão de aposentadorias, auxílio-doença, BPC/LOAS e revisões de benefícios.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="sobre" style="background-color: #fff;">
-        <div class="container sobre-content">
-            <div class="sobre-text">
-                <h2>Sobre o Escritório</h2>
-                <p>Sob a condução do Dr. Marcos Vinicius Schnorr, o escritório atua pautado pela transparência, agilidade e pelo atendimento estritamente humanizado de cada constituinte.</p>
-                <p>Acreditamos que a advocacia de alto nível exige ir além das soluções genéricas. Cada caso é analisado de forma minuciosa para traçar a melhor estratégia jurídica, garantindo segurança e celeridade na proteção dos seus interesses.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contato" class="container">
-        <h2>Fale Conosco</h2>
-        <div class="contato-wrapper">
-            <div class="contato-info">
-                <p>Precisa de suporte jurídico especializado? Entre em contato através dos nossos canais de atendimento oficiais:</p>
-                <p><strong>WhatsApp / Celular:</strong> (51) 98187-8745</p>
-                <p><strong>E-mail:</strong> mschnorr.adv@gmail.com</p>
-                <p><strong>Endereço:</strong> Presencial e Digital (Consulte abrangência)</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Marcos Vinicius Schnorr - Advogado. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
-</body>
-</html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcos Vinicius Schnorr | Advogado</title>
+  <meta name="description" content="Advocacia personalizada com atendimento online em todo o Brasil. Direito Civil, Consumidor, Família, Trabalhista, Previdenciário e Contratual.">
+  <meta property="og:title" content="Marcos Vinicius Schnorr | Advogado">
+  <meta property="og:description" content="Direito com excelência, atendimento com humanidade. Atendimento online em todo o Brasil.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mschnorr.adv.br">
+  <meta property="og:image" content="logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #1a1a2e;
+      line-height: 1.6;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .section-title h2 {
+      font-size: 2.5rem;
+      color: #0a1628;
+    }
+    .section-title h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #c9a84c;
+      margin: 15px auto 0;
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 35px;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+    .btn-primary {
+      background: #c9a84c;
+      color: #0a1628;
+      box-shadow: 0 4px 15px rgba(201, 168, 76, 0.3);
+    }
+    .btn-primary:hover {
+      background: #b8973a;
+      transform: translateY(-2px);
+    }
+    .btn-outline {
+      background: transparent;
+      border: 2px solid #c9a84c;
+      color: #c9a84c;
+    }
+    .btn-outline:hover {
+      background: #c9a84c;
+      color: #0a1628;
+    }
+    .btn-whatsapp {
+      background: #25D366;
+      color: #fff;
+    }
+    .btn-whatsapp:hover {
+      background: #1da851;
+      transform: translateY(-2px);
+    }
+    .bg-dark {
+      background: #0a1628;
+      color: #fff;
+    }
+    .bg-light {
+      background: #f8f9fa;
+    }
+    /* Top Bar */
+    .top-bar {
+      background: #060f1c;
+      color: #aaa;
+      padding: 10px 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 30px;
+      font-size: 0.9rem;
+    }
+    .top-bar a {
+      color: #aaa;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .top-bar a:hover {
+      color: #c9a84c;
+    }
+    /* Header */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: #0a1628; /* Garante fundo escuro desde o início para dar contraste ao logo */
+      transition: all 0.4s ease;
+      padding: 10px 0;
+    }
+    .header.scrolled {
+      background: rgba(10, 22, 40, 0.95);
+      box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    }
+    .header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      color: #fff;
+      text-decoration: none;
+    }
+    /* Ajuste de tamanho corrigido para o logotipo */
+    .logo img {
+      height: 65px; /* Aumentado para melhor visibilidade */
+      width: auto;
+      object-fit: contain;
+      background-color: #fff; /* Fundo branco sutil ao redor do logo para dar destaque absoluto */
+      padding: 5px;
+      border-radius: 4px;
+    }
+    .logo span {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #fff;
+    }
+    .nav-menu ul {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+      align-items: center;
+    }
+    .nav-menu ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.3s;
+    }
+    .nav-menu ul li a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #c9a84c;
+      transition: width 0.3s ease;
+    }
+    .nav-menu ul li a:hover {
+      color: #c9a84c;
+    }
+    .nav-menu ul li a:hover::after {
+      width: 100%;
+    }
+    .nav-cta {
+      background: #25D366 !important;
+      padding: 10px 20px;
+      border-radius: 50px;
+      color: #fff !important;
+    }
+    .nav-cta:hover {
+      background: #1da851 !important;
+    }
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 6px;
+      background: none;
+      border: none;
+      padding: 0;
+    }
+    .hamburger span {
+      width: 30px;
+      height: 3px;
+      background: #fff;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+    .hamburger.active span:nth-child(1) {
+      transform: rotate(45deg) translate(6px, 6px);
+    }
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -6px);
+    }
+    /* Hero */
+    .hero {
+      min-height
